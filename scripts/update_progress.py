@@ -57,6 +57,10 @@ def collect_recent_commits() -> list[dict[str, str]]:
             commit = item.get("commit") or {}
             author = commit.get("author") or {}
             message = (commit.get("message") or "").splitlines()[0].strip()
+            # Ignore this workflow's own data-only commit, otherwise each run
+            # would observe yesterday's commit and manufacture a new change.
+            if message == "Refresh cybersecurity dashboard data":
+                continue
             commits.append({
                 "repository": repository,
                 "sha": (item.get("sha") or "")[:7],
