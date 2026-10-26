@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090d16">
-  <meta name="description" content="Jayesh's cybersecurity learning dashboard — TryHackMe progress, daily learning, and GitHub activity on the path to SOC Analyst L1.">
+  <meta name="description" content="Jayesh's cybersecurity learning dashboard — TryHackMe progress, daily learning, and practical cybersecurity skills on the path to SOC Analyst L1.">
   <title>Jayesh | Cybersecurity Dashboard</title>
   <style>
     :root{color-scheme:dark;--bg:#090d16;--panel:#101827;--panel2:#0d1421;--line:#223047;--text:#edf3ff;--muted:#9baac1;--red:#ff4d5e;--blue:#54a7ff;--green:#57d69a;--max:1120px}
@@ -20,7 +20,7 @@
 <body>
   <header class="wrap nav">
     <a class="brand" href="#home">J<span>.</span> / CYBER</a>
-    <nav class="navlinks" aria-label="Main navigation"><a href="#progress">Progress</a><a href="#learning">Learning</a><a href="#activity">Activity</a><a href="#contact">Links</a></nav>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#progress">Progress</a><a href="#learning">Learning</a><a href="#skills">Skills</a><a href="#contact">Links</a></nav>
   </header>
   <main class="wrap" id="home">
     <section class="hero">
@@ -61,10 +61,6 @@
     <section id="projects">
       <div class="section-head"><div><div class="kicker">05 / Workbench</div><h2>Projects & write-ups</h2></div><p>Only published or recorded work appears here. Planned work is labelled clearly.</p></div>
       <div id="project-list" class="grid"><div class="loading">Loading project records…</div></div>
-    </section>
-    <section id="activity">
-      <div class="section-head"><div><div class="kicker">06 / GitHub</div><h2>Repository activity</h2></div><p>Limited to this portfolio and my cybersecurity learning journal.</p></div>
-      <div id="activity-list" class="list"><div class="loading">Loading recent repository activity…</div></div>
     </section>
     <section id="contact">
       <div class="contact"><div><div class="kicker">07 / Connect</div><h2>Learning in public.</h2><p>Building my cybersecurity foundations one documented step at a time.</p></div><div class="actions" style="margin:0"><a class="btn primary" href="https://github.com/JayeshChabukswar" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="https://github.com/JayeshChabukswar/cybersecurity.path" target="_blank" rel="noreferrer">Learning journal ↗</a></div></div>
@@ -110,22 +106,18 @@
       const projects = data.projects || [];
       document.getElementById("project-list").innerHTML = projects.length ? projects.map(p => '<article class="card"><span class="status">' + esc(p.status || "Recorded") + '</span><h3>' + esc(p.name || "Untitled project") + '</h3><p>' + esc(p.description || "") + '</p>' + (p.url ? '<div class="tags">' + link(p.url,"Open project") + '</div>' : "") + '</article>').join("") : '<div class="empty">No standalone projects or write-ups have been added to the dashboard data yet. Completed TryHackMe rooms are listed separately above.</div>';
     }
-    function renderActivity(data) {
-      const items = data.github_activity?.latest_commits || [];
-      document.getElementById("activity-list").innerHTML = items.length ? items.map(c => '<div class="list-item"><div><strong>' + esc(c.message || "Repository update") + '</strong><div class="meta">' + esc(c.repository || "") + ' · ' + esc(dateText(c.date)) + ' · ' + esc(c.sha || "") + '</div></div><span class="arrow">' + link(c.url || "#","View commit") + '</span></div>').join("") : '<div class="empty">No activity snapshot has been collected yet. The scheduled workflow will populate this section when it finds recent commits.</div>';
-    }
     async function loadDashboard() {
       document.getElementById("year").textContent = new Date().getFullYear();
       try {
         const response = await fetch("./data/progress.json", {cache:"no-store"});
         if (!response.ok) throw new Error("Could not load progress data (HTTP " + response.status + ").");
         const data = await response.json();
-        renderStats(data); renderPaths(data); renderRooms(data); renderLogs(data); renderProjects(data); renderActivity(data);
+        renderStats(data); renderPaths(data); renderRooms(data); renderLogs(data); renderProjects(data);
         document.getElementById("updated").textContent = "Data snapshot · " + dateText(data.last_updated);
       } catch (error) {
         document.getElementById("updated").innerHTML = '<span class="error">Progress data unavailable</span>';
         document.getElementById("stats").innerHTML = '<div class="empty" role="alert">' + esc(error.message) + ' Check that data/progress.json is deployed alongside this page.</div>';
-        for (const id of ["paths","rooms","logs","project-list","activity-list"]) document.getElementById(id).innerHTML = '<div class="empty">This section could not load because the progress data is unavailable.</div>';
+        for (const id of ["paths","rooms","logs","project-list"]) document.getElementById(id).innerHTML = '<div class="empty">This section could not load because the progress data is unavailable.</div>';
       }
     }
     loadDashboard();
