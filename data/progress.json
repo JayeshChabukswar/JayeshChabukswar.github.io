@@ -61,7 +61,78 @@
       "JayeshChabukswar/JayeshChabukswar.github.io",
       "JayeshChabukswar/cybersecurity.path"
     ],
-    "latest_commits": []
+    "latest_commits": [
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "3e3978e",
+        "message": "Prevent dashboard workflow self-triggered data changes",
+        "date": "2026-10-26T11:13:08Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/3e3978e657319102692a58d04cc3f75f67b27a7d"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "bc197bd",
+        "message": "Document cybersecurity dashboard and automation",
+        "date": "2026-10-26T11:12:22Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/bc197bd425369b774b4aeb19036a944fc75a7a85"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "8c9d94b",
+        "message": "Schedule daily dashboard data refresh",
+        "date": "2026-10-26T11:12:19Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/8c9d94bc4fa3bff8911f45e4641fd5667548079d"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "232ef60",
+        "message": "Add idempotent dashboard data updater",
+        "date": "2026-10-26T11:12:16Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/232ef600c73500e89098558eda0bc9d307b81946"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "55ef966",
+        "message": "Add dashboard progress data",
+        "date": "2026-10-26T11:12:14Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/55ef96601b0a72d245f5c53c9fb1c3c7de9d1168"
+      },
+      {
+        "repository": "JayeshChabukswar/cybersecurity.path",
+        "sha": "36f316b",
+        "message": "Add structured progress data for dashboard",
+        "date": "2026-10-26T11:07:05Z",
+        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/36f316b0648d80d822a20126ab913710e7e17ea2"
+      },
+      {
+        "repository": "JayeshChabukswar/cybersecurity.path",
+        "sha": "e6d09f8",
+        "message": "Add daily learning record for 2026-10-26",
+        "date": "2026-10-26T10:23:26Z",
+        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/e6d09f8ee922c8cb318c8c3baeafa820539e36a0"
+      },
+      {
+        "repository": "JayeshChabukswar/cybersecurity.path",
+        "sha": "09134d8",
+        "message": "Organize cybersecurity learning journal",
+        "date": "2026-10-26T10:23:23Z",
+        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/09134d8ef2db6c360b51afe57f94cb1eda889185"
+      },
+      {
+        "repository": "JayeshChabukswar/cybersecurity.path",
+        "sha": "8b8ebc4",
+        "message": "Start network traffic analysis project",
+        "date": "2026-10-25T14:17:00Z",
+        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/8b8ebc43bc10adfd0cf4b9f590c30ed5d5e29d63"
+      },
+      {
+        "repository": "JayeshChabukswar/cybersecurity.path",
+        "sha": "671e4ba",
+        "message": "Update learning progress: John the Ripper in progress",
+        "date": "2026-10-24T17:38:20Z",
+        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/671e4babeb03fe8c259a50221eb338ed5c7edb6d"
+      }
+    ]
   },
   "streak": {
     "calculation": "consecutive_dates_with_learning_records",
