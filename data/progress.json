@@ -61,7 +61,36 @@
       "JayeshChabukswar/JayeshChabukswar.github.io",
       "JayeshChabukswar/cybersecurity.path"
     ],
+    "last_checked": null,
     "latest_commits": [
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "54e4095",
+        "message": "Add cybersecurity profile link to homepage",
+        "date": "2026-10-26T11:57:28Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/54e40950a523138938736f1d2dab7f72749313ea"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "ec56288",
+        "message": "Remove live GitHub activity feed from portfolio",
+        "date": "2026-10-26T11:18:50Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/ec56288a08a8d74688808e997490d7ffea1b434e"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "4822c3b",
+        "message": "Seed dashboard with verified repository activity",
+        "date": "2026-10-26T11:13:49Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/4822c3b921d663a9165ed2022d8c62a9dfc7e9bc"
+      },
+      {
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "04349a9",
+        "message": "Keep recent real activity stable across scheduled runs",
+        "date": "2026-10-26T11:13:41Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/04349a9bf26be9fd75bd9d1e763ad61dffb4918a"
+      },
       {
         "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
         "sha": "3e3978e",
@@ -98,39 +127,11 @@
         "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/55ef96601b0a72d245f5c53c9fb1c3c7de9d1168"
       },
       {
-        "repository": "JayeshChabukswar/cybersecurity.path",
-        "sha": "36f316b",
-        "message": "Add structured progress data for dashboard",
-        "date": "2026-10-26T11:07:05Z",
-        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/36f316b0648d80d822a20126ab913710e7e17ea2"
-      },
-      {
-        "repository": "JayeshChabukswar/cybersecurity.path",
-        "sha": "e6d09f8",
-        "message": "Add daily learning record for 2026-10-26",
-        "date": "2026-10-26T10:23:26Z",
-        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/e6d09f8ee922c8cb318c8c3baeafa820539e36a0"
-      },
-      {
-        "repository": "JayeshChabukswar/cybersecurity.path",
-        "sha": "09134d8",
-        "message": "Organize cybersecurity learning journal",
-        "date": "2026-10-26T10:23:23Z",
-        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/09134d8ef2db6c360b51afe57f94cb1eda889185"
-      },
-      {
-        "repository": "JayeshChabukswar/cybersecurity.path",
-        "sha": "8b8ebc4",
-        "message": "Start network traffic analysis project",
-        "date": "2026-10-25T14:17:00Z",
-        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/8b8ebc43bc10adfd0cf4b9f590c30ed5d5e29d63"
-      },
-      {
-        "repository": "JayeshChabukswar/cybersecurity.path",
-        "sha": "671e4ba",
-        "message": "Update learning progress: John the Ripper in progress",
-        "date": "2026-10-24T17:38:20Z",
-        "url": "https://github.com/JayeshChabukswar/cybersecurity.path/commit/671e4babeb03fe8c259a50221eb338ed5c7edb6d"
+        "repository": "JayeshChabukswar/JayeshChabukswar.github.io",
+        "sha": "a9b3199",
+        "message": "Build data-driven cybersecurity progress dashboard",
+        "date": "2026-10-26T11:12:11Z",
+        "url": "https://github.com/JayeshChabukswar/JayeshChabukswar.github.io/commit/a9b31999e83461bf581e0c988a544fa68150dca7"
       }
     ]
   },
