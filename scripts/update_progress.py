@@ -49,7 +49,7 @@ def get_json(url: str) -> Any:
 def collect_recent_commits() -> list[dict[str, str]]:
     commits: list[dict[str, str]] = []
     for repository in TRACKED_REPOSITORIES:
-        url = f"https://api.github.com/repos/{repository}/commits?per_page=5"
+        url = f"https://api.github.com/repos/{repository}/commits?per_page=100"
         response = get_json(url)
         if not isinstance(response, list):
             raise RuntimeError(f"Unexpected commits response for {repository}")
